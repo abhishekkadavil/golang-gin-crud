@@ -1,0 +1,21 @@
+meta {
+  name: Create employee
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/employee/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Employee_id": 22,
+    "Employee_name": "jose",
+    "Employee_age": 20,
+    "Employee_salary": 5000,
+    "Employee_Designation": ""
+  }
+}
