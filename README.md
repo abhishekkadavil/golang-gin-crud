@@ -12,3 +12,13 @@ gorm - used to manage db ops
 https://gorm.io/docs/index.html
 go get -u gorm.io/gorm
 go get -u gorm.io/driver/postgres
+
+
+build docker image
+docker build -t abhishekkadavil/golang-gin-crud:v4 .    
+
+push to docker hub
+docker push abhishekkadavil/golang-gin-crud:v4
+
+docker-compose up
+docker-compose down

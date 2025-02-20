@@ -1,0 +1,30 @@
+# Ignore the git directory
+.git
+
+# Ignore Go module files' cache and vendor files
+**/vendor/
+**/go.sum
+
+# Go build artifacts
+*.exe
+*.test
+*.out
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Docker build cache
+.docker/
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files or backup files
+*.bak
+*.swp
+*.tmp
