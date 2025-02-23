@@ -1,0 +1,81 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Simple CRUD operation APIs in Golang Gin",
+        "title": "Golang Gin CRUD API",
+        "contact": {
+            "name": "Abhishek Kadavil",
+            "url": "https://github.com/abhishekkadavil/golang-gin-crud",
+            "email": "abhishek.kadavil@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "paths": {
+        "/employee/create": {
+            "post": {
+                "description": "Save employee data in Db.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Employee CRUD"
+                ],
+                "summary": "Create employee",
+                "responses": {}
+            }
+        },
+        "/employees": {
+            "get": {
+                "description": "Get all employees data from Db.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Employee CRUD"
+                ],
+                "summary": "Get all employees",
+                "responses": {}
+            }
+        },
+        "/employees/{id}": {
+            "get": {
+                "description": "Get an employees data from Db.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Employee CRUD"
+                ],
+                "summary": "Get an employee",
+                "responses": {}
+            },
+            "put": {
+                "description": "Update an employees data from Db.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Employee CRUD"
+                ],
+                "summary": "Update an employee",
+                "responses": {}
+            },
+            "delete": {
+                "description": "Delete an employees data from Db.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Employee CRUD"
+                ],
+                "summary": "Delete an employee",
+                "responses": {}
+            }
+        }
+    }
+}

@@ -22,3 +22,11 @@ docker push abhishekkadavil/golang-gin-crud:v4
 
 docker-compose up
 docker-compose down
+
+
+go install github.com/swaggo/swag/cmd/swag@latest
+go get github.com/swaggo/swag@latest
+go get github.com/swaggo/gin-swagger
+go get github.com/swaggo/files
+swag init - need to do this every time when any changes happened to swagger doc
+http://localhost:3000/docs/index.html

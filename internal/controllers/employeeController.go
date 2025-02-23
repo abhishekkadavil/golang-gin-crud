@@ -8,6 +8,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// CreateEmployee godoc
+// @Summary			Create employee
+// @Description		Save employee data in Db.
+// @Accept       	application/json
+// @Produce			application/json
+// @Tags			Employee CRUD
+// @Router			/employee/create [post]
 func CreateEmployee(c *gin.Context) {
 
 	// Get data from req body
@@ -40,6 +47,12 @@ func CreateEmployee(c *gin.Context) {
 	})
 }
 
+// GetAllEmployees godoc
+// @Summary			Get all employees
+// @Description		Get all employees data from Db.
+// @Produce			application/json
+// @Tags			Employee CRUD
+// @Router			/employees [GET]
 func GetAllEmployees(c *gin.Context) {
 
 	// Get employee
@@ -57,6 +70,12 @@ func GetAllEmployees(c *gin.Context) {
 
 }
 
+// GetEmployee godoc
+// @Summary			Get an employee
+// @Description		Get an employee data from Db.
+// @Produce			application/json
+// @Tags			Employee CRUD
+// @Router			/employees/{id} [GET]
 func GetEmployee(c *gin.Context) {
 
 	// Get id from url
@@ -77,6 +96,12 @@ func GetEmployee(c *gin.Context) {
 
 }
 
+// UpdateEmployee godoc
+// @Summary			Update an employee
+// @Description		Update an employee data from Db.
+// @Produce			application/json
+// @Tags			Employee CRUD
+// @Router			/employees/{id} [PUT]
 func UpdateEmployee(c *gin.Context) {
 
 	// Get id from url
@@ -110,6 +135,12 @@ func UpdateEmployee(c *gin.Context) {
 	})
 }
 
+// DeleteEmployee godoc
+// @Summary			Delete an employee
+// @Description		Delete an employee data from Db.
+// @Produce			application/json
+// @Tags			Employee CRUD
+// @Router			/employees/{id} [DELETE]
 func DeleteEmployee(c *gin.Context) {
 
 	// Get id from url

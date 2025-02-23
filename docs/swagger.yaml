@@ -1,0 +1,57 @@
+basePath: /api
+host: localhost:3000
+info:
+  contact:
+    email: abhishek.kadavil@gmail.com
+    name: Abhishek Kadavil
+    url: https://github.com/abhishekkadavil/golang-gin-crud
+  description: Simple CRUD operation APIs in Golang Gin
+  title: Golang Gin CRUD API
+  version: "1.0"
+paths:
+  /employee/create:
+    post:
+      consumes:
+      - application/json
+      description: Save employee data in Db.
+      produces:
+      - application/json
+      responses: {}
+      summary: Create employee
+      tags:
+      - Employee CRUD
+  /employees:
+    get:
+      description: Get all employees data from Db.
+      produces:
+      - application/json
+      responses: {}
+      summary: Get all employees
+      tags:
+      - Employee CRUD
+  /employees/{id}:
+    delete:
+      description: Delete an employees data from Db.
+      produces:
+      - application/json
+      responses: {}
+      summary: Delete an employee
+      tags:
+      - Employee CRUD
+    get:
+      description: Get an employees data from Db.
+      produces:
+      - application/json
+      responses: {}
+      summary: Get an employee
+      tags:
+      - Employee CRUD
+    put:
+      description: Update an employees data from Db.
+      produces:
+      - application/json
+      responses: {}
+      summary: Update an employee
+      tags:
+      - Employee CRUD
+swagger: "2.0"
