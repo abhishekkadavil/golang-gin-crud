@@ -50,6 +50,9 @@ go get github.com/swaggo/files
 
 ### Execution and swagger
 
-Swag init  
+```
+Swag init
+```
+
 Need to do this every time when any changes happened to swagger doc
 http://localhost:3000/docs/index.html
