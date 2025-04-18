@@ -30,3 +30,6 @@ go get github.com/swaggo/gin-swagger
 go get github.com/swaggo/files
 swag init - need to do this every time when any changes happened to swagger doc
 http://localhost:3000/docs/index.html
+
+
+Docker image: https://hub.docker.com/repository/docker/abhishekkadavil/golang-gin-crud/general
